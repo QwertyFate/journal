@@ -80,9 +80,10 @@ app.post("/compose", async function(req,res){
     titles.push(newtitle);
     entries.push(newentry);
     let newnumber = titles.length;
-    numberentries.push("/posts/" + newnumber + "0" + newnumber);
-    await savejournal(newtitle,newentry, newnumber);
-    res.redirect("/");
+    let newnumentry = "/posts/" + newnumber + "0" + newnumber;
+    numberentries.push(newnumentry);
+    await savejournal(newtitle,newentry, newnumentry);
+    await res.redirect("/");
     console.log(numberentries);
 });
 
