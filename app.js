@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 let titles = [];
 let entries = [];
 let numberentries =[];
-mongoose.connect("mongodb+srv://admin-qwerty:qwerty12321@cluster0.dd2mtgv.mongodb.net/?retryWrites=true&w=majority/journal");
+mongoose.connect("mongodb+srv://admin-qwerty:qwerty12321@cluster0.dd2mtgv.mongodb.net/?retryWrites=true&w=majority");
 
 
 // MONGOOSE functions
@@ -19,7 +19,7 @@ const journalschema = new mongoose.Schema({
         require: true
     },
     entry: String,
-    entrynumber: Number
+    entrynumber: String
 });
 
 
