@@ -83,7 +83,10 @@ app.post("/compose", async function(req,res){
     let newnumentry = "/posts/" + newnumber + "0" + newnumber;
     numberentries.push(newnumentry);
     await savejournal(newtitle,newentry, newnumentry);
-    await res.redirect("/");
+    setTimeout(function(){
+        res.redirect("/");
+    }, 100);
+    
     console.log(numberentries);
 });
 
