@@ -1,0 +1,41 @@
+
+body{
+   margin: auto 1%;
+   padding-left: 12%;
+   padding-right: 12%;
+   font-family: 'Kanit', sans-serif;
+}
+h1{
+    padding-left: 1.5%;
+    font-size: 1.7rem;
+    margin-top: 5%;
+}
+h2{
+    padding-left: 1.5%;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+p{
+    padding-left: 1.5%;
+    font-size: 0.8rem;
+}
+
+/* IDS */
+
+/* CLASSES */
+
+.gray{
+    color: gray;
+}
+
+.navbar-brand{
+    font-size: 1.2;
+}
+.nav-link{
+    font-size: 0.8rem;
+}
+
+.width{
+    width: 500px;
+    
+}
